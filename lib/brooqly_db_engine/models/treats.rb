@@ -7,8 +7,8 @@ module BrooqlyDbEngine
         field :code, :string
         field :currency_code, :string
         field :date, :integer
-        field :from, :integer
-        field :item, :integer
+        field :from, :string
+        field :item, :string
         field :message, :string
         field :pay_date, :integer
         field :pay_status, :string
@@ -17,8 +17,8 @@ module BrooqlyDbEngine
         field :quantity, :integer
         field :ref, :string
         field :status, :string
-        field :store, :integer
-        field :to, :integer
+        field :store, :string
+        field :to, :string
         field :total_price, :number
         field :type, :string
         field :treat_id,  :string
