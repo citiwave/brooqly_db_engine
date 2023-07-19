@@ -21,9 +21,10 @@ module BrooqlyDbEngine
         field :to, :integer
         field :total_price, :number
         field :type, :string
+        field :treat_id,  :string
 
         def self.next_id
-            s = Store.count
+            s = Treat.count
             s.to_i+1
         end        
     end

@@ -6,6 +6,7 @@ module BrooqlyDbEngine
         
         field :profile_details,  :serialized
         field :user_data, :serialized
+        field :user_id,  :string
 
         def self.next_id
             s = User.count
