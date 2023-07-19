@@ -9,7 +9,8 @@ module BrooqlyDbEngine
         field :data,  :serialized
         field :financial,  :serialized
         field :items, :serialized
-        field :presence,  :serialized
+        field :bpresence,  :serialized
+        field :store_id,  :string
         field :owners, :array, of: :integer
 
         def self.next_id
