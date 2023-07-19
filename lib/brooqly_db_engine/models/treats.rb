@@ -12,14 +12,19 @@ module BrooqlyDbEngine
         field :message, :string
         field :pay_date, :integer
         field :pay_status, :string
-        field :price, :float
+        field :price, :number
         field :purchase_date, :integer
         field :quantity, :integer
         field :ref, :string
         field :status, :string
         field :store, :integer
         field :to, :integer
-        field :total_price, :float
+        field :total_price, :number
         field :type, :string
+
+        def self.next_id
+            s = Store.count
+            s.to_i+1
+        end        
     end
 end
