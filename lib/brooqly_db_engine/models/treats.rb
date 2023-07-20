@@ -6,20 +6,21 @@ module BrooqlyDbEngine
         
         field :code, :string
         field :currency_code, :string
+        field :to, :string
         field :date, :integer
         field :from, :string
         field :item, :string
         field :message, :string
         field :pay_date, :integer
         field :pay_status, :string
-        field :price, :number
+        field :price, :integer
         field :purchase_date, :integer
+        field :redeem_date, :integer
         field :quantity, :integer
         field :ref, :string
         field :status, :string
         field :store, :string
-        field :to, :string
-        field :total_price, :number
+        field :total_price, :integer
         field :type, :string
         field :treat_id,  :string
 

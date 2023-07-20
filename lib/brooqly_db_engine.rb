@@ -8,9 +8,13 @@ module BrooqlyDbEngine
   @@aws_access_key = ""
   @@aws_secret_key = ""
   @@aws_region = ""
-  autoload :Store,				"brooqly_db_engine/models/stores"
-  autoload :Treat,				"brooqly_db_engine/models/treats"
-  autoload :User,				  "brooqly_db_engine/models/users"
+  autoload :Store,				  "brooqly_db_engine/models/stores"
+  autoload :StoreCategory,  "brooqly_db_engine/models/stores_categories"
+  autoload :Treat,				  "brooqly_db_engine/models/treats"
+  autoload :User,				    "brooqly_db_engine/models/users"
+  autoload :Item,				    "brooqly_db_engine/models/item"
+  autoload :Category,			  "brooqly_db_engine/models/category"
+  
   def self.configure(params = {})
     Dynamoid.configure do |config|
       # Local DDB endpoint:
