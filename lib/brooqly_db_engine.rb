@@ -12,9 +12,9 @@ module BrooqlyDbEngine
   autoload :StoreCategory,  "brooqly_db_engine/models/stores_categories"
   autoload :Treat,				  "brooqly_db_engine/models/treats"
   autoload :User,				    "brooqly_db_engine/models/users"
-  autoload :Item,				    "brooqly_db_engine/models/item"
-  autoload :Category,			  "brooqly_db_engine/models/category"
-  
+  autoload :Item,				    "brooqly_db_engine/models/items"
+  autoload :Category,			  "brooqly_db_engine/models/categories"
+
   def self.configure(params = {})
     Dynamoid.configure do |config|
       # Local DDB endpoint:
