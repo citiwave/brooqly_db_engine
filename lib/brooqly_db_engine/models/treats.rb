@@ -23,6 +23,9 @@ module BrooqlyDbEngine
         field :store, :string
         field :total_price, :integer
         field :type, :string
+        
+        local_secondary_index range_key: :store
+        local_secondary_index range_key: :item
 
         def self.next_id
             s = Treat.count
