@@ -4,6 +4,7 @@ module BrooqlyDbEngine
 
         table name: :treats, key: :id, capacity_mode: :on_demand
         
+        field :treat_id,  :string
         field :code, :string
         field :currency_code, :string
         field :to, :string
@@ -22,13 +23,10 @@ module BrooqlyDbEngine
         field :store, :string
         field :total_price, :integer
         field :type, :string
-        field :treat_id,  :string
 
         def self.next_id
             s = Treat.count
             s.to_i+1
-        end
-        def item
         end
     end
 end
