@@ -13,6 +13,7 @@ module BrooqlyDbEngine
   autoload :Treat,				  "brooqly_db_engine/models/treats"
   autoload :User,				    "brooqly_db_engine/models/users"
   autoload :Item,				    "brooqly_db_engine/models/items"
+  autoload :Payment,				"brooqly_db_engine/models/payments"
   autoload :Category,			  "brooqly_db_engine/models/categories"
 
   def self.configure(params = {})

@@ -14,6 +14,9 @@ module BrooqlyDbEngine
         def self.next_id
             s = Item.count
             s.to_i+1
-        end 
+        end
+        def category
+            
+        end
     end
 end

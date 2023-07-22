@@ -27,6 +27,8 @@ module BrooqlyDbEngine
         def self.next_id
             s = Treat.count
             s.to_i+1
-        end        
+        end
+        def item
+        end
     end
 end

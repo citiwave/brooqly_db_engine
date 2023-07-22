@@ -17,5 +17,9 @@ module BrooqlyDbEngine
             s = Store.count
             s.to_i+1
         end
+        def treats
+        end
+        def items
+        end
     end
 end
