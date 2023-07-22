@@ -1,5 +1,5 @@
 module BrooqlyDbEngine
-    class Store  
+    class Payment  
         include Dynamoid::Document
 
         table name: :payments, key: :id, capacity_mode: :on_demand
