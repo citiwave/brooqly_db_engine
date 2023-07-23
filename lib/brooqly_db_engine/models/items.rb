@@ -11,12 +11,14 @@ module BrooqlyDbEngine
         field :name, :string
         field :names, :serialized
 
+        global_secondary_index hash_key: :item_id
+
         def self.next_id
             s = Item.count
             s.to_i+1
         end
         def category
-            
+
         end
     end
 end

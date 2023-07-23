@@ -13,6 +13,8 @@ module BrooqlyDbEngine
         field :store_id,  :string
         field :owners, :array, of: :integer
 
+        global_secondary_index hash_key: :store_id
+        
         def self.next_id
             s = Store.count
             s.to_i+1

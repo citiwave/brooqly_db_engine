@@ -4,12 +4,11 @@ module BrooqlyDbEngine
 
         table name: :payments, key: :id, capacity_mode: :on_demand
 
-        belongs_to :store
-        has_many :treats
-
-        field :store_ids, :string
-        field :treat_ids, :array, of: :string
+        field :store_id, :string
+        field :treats_id, :array, of: :string
         field :amount, :string
         field :status, :string
+        
+        global_secondary_index hash_key: :store_id
     end
 end

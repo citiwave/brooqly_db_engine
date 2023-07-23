@@ -8,6 +8,7 @@ module BrooqlyDbEngine
         field :permissions,  :serialized
         field :account,  :serialized
 
+        global_secondary_index hash_key: :user_id
         def self.next_id
             s = Owner.count
             s.to_i+1

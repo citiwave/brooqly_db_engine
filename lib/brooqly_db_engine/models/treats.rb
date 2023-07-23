@@ -24,8 +24,10 @@ module BrooqlyDbEngine
         field :total_price, :integer
         field :type, :string
         
-        global_secondary_index range_key: :store
-        global_secondary_index range_key: :item
+        global_secondary_index hash_key: :store
+        global_secondary_index hash_key: :item
+        global_secondary_index hash_key: :from
+        global_secondary_index hash_key: :to
 
         def self.next_id
             s = Treat.count

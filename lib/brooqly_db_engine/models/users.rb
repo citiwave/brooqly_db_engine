@@ -11,6 +11,7 @@ module BrooqlyDbEngine
         field :friends, :array, of: :string
         field :location, :serialized
 
+        global_secondary_index hash_key: :user_id
         def self.next_id
             s = User.count
             s.to_i+1

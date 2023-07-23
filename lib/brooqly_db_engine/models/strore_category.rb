@@ -9,6 +9,8 @@ module BrooqlyDbEngine
         field :image_url, :string
         field :name, :string
 
+        global_secondary_index hash_key: :store_category_id
+
         def self.next_id
             s = StoreCategory.count
             s.to_i+1
