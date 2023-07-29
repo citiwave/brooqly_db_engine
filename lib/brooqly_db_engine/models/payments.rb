@@ -10,5 +10,9 @@ module BrooqlyDbEngine
         field :status, :string
         
         global_secondary_index hash_key: :store_id
+        def self.have_status(status)
+            # Return how many treats are purchased (so not consumed and paid)
+            Payment.where(:status => status).to_a
+        end
     end
 end

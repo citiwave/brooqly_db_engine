@@ -6,6 +6,6 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 13.0"
-gem 'aws-sdk'
-gem 'dynamoid'
+# gem 'aws-sdk'
+# gem 'dynamoid'
 gem 'map'

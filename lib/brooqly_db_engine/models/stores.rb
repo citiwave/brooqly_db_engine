@@ -15,9 +15,11 @@ module BrooqlyDbEngine
 
         global_secondary_index hash_key: :store_id
         
-        def self.next_id
-            s = Store.count
-            s.to_i+1
+        def name=(name)
+            self.bpresence = {name: name}
+        end
+        def name
+            self.bpresence[:name]
         end
     end
 end

@@ -11,9 +11,5 @@ module BrooqlyDbEngine
 
         global_secondary_index hash_key: :store_category_id
 
-        def self.next_id
-            s = StoreCategory.count
-            s.to_i+1
-        end 
     end
 end

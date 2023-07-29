@@ -12,9 +12,5 @@ module BrooqlyDbEngine
         field :location, :serialized
 
         global_secondary_index hash_key: :user_id
-        def self.next_id
-            s = User.count
-            s.to_i+1
-        end 
     end
 end
