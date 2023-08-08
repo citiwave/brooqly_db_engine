@@ -9,7 +9,7 @@ module BrooqlyDbEngine
   @@aws_secret_key = ""
   @@aws_region = ""
   autoload :Store,				  "brooqly_db_engine/models/stores"
-  autoload :StoreCategory,  "brooqly_db_engine/models/stores_categories"
+  autoload :StoreCategory,  "brooqly_db_engine/models/store_categories"
   autoload :Treat,				  "brooqly_db_engine/models/treats"
   autoload :User,				    "brooqly_db_engine/models/users"
   autoload :Item,				    "brooqly_db_engine/models/items"
