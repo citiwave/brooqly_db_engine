@@ -8,6 +8,7 @@ module BrooqlyDbEngine
         field :treats_id, :array, of: :string
         field :amount, :string
         field :status, :string
+        field :date, :string
         
         global_secondary_index hash_key: :store_id
         def self.have_status(status)
