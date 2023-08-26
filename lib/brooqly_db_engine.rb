@@ -15,6 +15,7 @@ module BrooqlyDbEngine
   autoload :Item,				    "brooqly_db_engine/models/items"
   autoload :Payment,				"brooqly_db_engine/models/payments"
   autoload :Category,			  "brooqly_db_engine/models/categories"
+  autoload :Friendship,			  "brooqly_db_engine/models/friendships"
 
   def self.configure(params = {})
     Dynamoid.configure do |config|
