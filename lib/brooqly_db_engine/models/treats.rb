@@ -23,6 +23,8 @@ module BrooqlyDbEngine
         field :store, :string
         field :total_price, :integer
         field :type, :string
+        field :is_remote, :string
+        field :is_inshop, :string
         
         global_secondary_index hash_key: :store
         global_secondary_index hash_key: :item
