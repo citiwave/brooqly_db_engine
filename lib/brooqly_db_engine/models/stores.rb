@@ -16,6 +16,8 @@ module BrooqlyDbEngine
 
         global_secondary_index hash_key: :store_id
         
+
+        
         def name=(name)
             self.bpresence = {name: name}
         end
