@@ -13,6 +13,7 @@ module BrooqlyDbEngine
         field :store_id,  :string
         field :owners, :array, of: :integer
         field :approval_status,  :string
+        field :is_eshop,  :string
 
         global_secondary_index hash_key: :store_id
         
