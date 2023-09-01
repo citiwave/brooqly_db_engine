@@ -4,9 +4,9 @@ module BrooqlyDbEngine
 
         table name: :orders, key: :id, capacity_mode: :on_demand
 
-        field :address, :serialize
+        field :address, :serialized
         field :treat_id, :string
-        field :item, :serialize
+        field :item, :serialized
         field :status, :string
         field :delivery_date, :string
     end
