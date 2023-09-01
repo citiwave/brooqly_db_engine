@@ -6,6 +6,7 @@ module BrooqlyDbEngine
 
         field :address, :serialized
         field :treat_id, :string
+        field :store_id, :string
         field :item, :serialized
         field :status, :string
         field :delivery_date, :string
