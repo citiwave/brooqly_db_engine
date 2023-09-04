@@ -1,5 +1,5 @@
 module BrooqlyDbEngine
-    class Checkin
+    class CheckIn
         include Dynamoid::Document
 
         table name: :checkins, key: :id, capacity_mode: :on_demand
