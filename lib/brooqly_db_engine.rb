@@ -19,6 +19,7 @@ module BrooqlyDbEngine
   autoload :Location,				  "brooqly_db_engine/models/locations"
   autoload :Notification,				  "brooqly_db_engine/models/notifications"
   autoload :Order,				  "brooqly_db_engine/models/orders"
+  autoload :CheckIn,				  "brooqly_db_engine/models/checkins"
 
   def self.configure(params = {})
     Dynamoid.configure do |config|
