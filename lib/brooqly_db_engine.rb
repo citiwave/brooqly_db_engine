@@ -20,7 +20,7 @@ module BrooqlyDbEngine
   autoload :Notification,				  "brooqly_db_engine/models/notifications"
   autoload :Order,				  "brooqly_db_engine/models/orders"
   autoload :CheckIn,				  "brooqly_db_engine/models/checkins"
-
+  autoload :Region,				  "brooqly_db_engine/models/regions"
   def self.configure(params = {})
     Dynamoid.configure do |config|
       # Local DDB endpoint:
