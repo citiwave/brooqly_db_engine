@@ -12,12 +12,10 @@ module BrooqlyDbEngine
         field :bpresence,  :serialized
         field :store_id,  :string
         field :owners, :array, of: :integer
-        field :approval_status,  :string
+        field :status,  :string
         field :is_eshop,  :string
 
         global_secondary_index hash_key: :store_id
-        
-
         
         def name=(name)
             self.bpresence = {name: name}
@@ -26,10 +24,10 @@ module BrooqlyDbEngine
             self.bpresence[:name]
         end
         def self.pending_shops_counter
-            stores = Store.where(:approval_status => "pending").count
+            stores = Store.where(:status => "pending").count
         end
         def self.pending_shops
-            stores = Store.where(:approval_status => "pending").to_a
+            stores = Store.where(:status => "pending").to_a
         end
         def self.counter(since)
             # unix utc timestamp now
