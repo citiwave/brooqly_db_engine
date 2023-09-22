@@ -15,4 +15,4 @@ module BrooqlyDbEngine
         global_secondary_index hash_key: :store_id
         global_secondary_index hash_key: :user_id
     end
-end
+end     
