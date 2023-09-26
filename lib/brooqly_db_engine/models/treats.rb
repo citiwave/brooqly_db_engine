@@ -14,14 +14,14 @@ module BrooqlyDbEngine
         field :message, :string
         field :pay_date, :integer
         field :pay_status, :string
-        field :price, :integer
+        field :price, :string
         field :purchase_date, :integer
         field :redeem_date, :integer
         field :quantity, :integer
         field :ref, :string
         field :status, :string
         field :store, :string
-        field :total_price, :integer
+        field :total_price, :string
         field :type, :string
         field :is_remote, :string
         field :is_inshop, :string
