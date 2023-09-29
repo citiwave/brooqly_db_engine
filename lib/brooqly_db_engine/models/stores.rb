@@ -6,6 +6,7 @@ module BrooqlyDbEngine
         
         field :address, :serialized 
         field :contact, :serialized
+        field :images, :serialized
         field :data,  :serialized
         field :financial,  :serialized
         field :items, :serialized
