@@ -23,6 +23,8 @@ module BrooqlyDbEngine
   autoload :Region,				  "brooqly_db_engine/models/regions"
   autoload :Post,				  "brooqly_db_engine/models/posts"
   autoload :Story,				  "brooqly_db_engine/models/stories"
+  autoload :ChatUser,				  "brooqly_db_engine/models/chat_users"
+  autoload :Device,				  "brooqly_db_engine/models/devices"
   def self.configure(params = {})
     Dynamoid.configure do |config|
       # Local DDB endpoint:
