@@ -15,8 +15,10 @@ module BrooqlyDbEngine
         field :owners, :array, of: :integer
         field :status,  :string
         field :is_eshop,  :string
-	field :location_id, :string
+	    field :location_id, :string
+        field :has_payment_provider, :string
 
+        
         global_secondary_index hash_key: :store_id
         
         def name=(name)
