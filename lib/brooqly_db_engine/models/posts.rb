@@ -12,7 +12,7 @@ module BrooqlyDbEngine
         field :views, :serialized
         field :comments, :serialized
         field :date, :string
-        field :timestamp, :string
+        field :ptimestamp, :string
         global_secondary_index hash_key: :store_id
         global_secondary_index hash_key: :user_id
     end
