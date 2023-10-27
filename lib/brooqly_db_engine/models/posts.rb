@@ -13,6 +13,7 @@ module BrooqlyDbEngine
         field :comments, :serialized
         field :date, :string
         field :ptimestamp, :string
+        field :reports, :array, of: :string
         global_secondary_index hash_key: :store_id
         global_secondary_index hash_key: :user_id
     end
