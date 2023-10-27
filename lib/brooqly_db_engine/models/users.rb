@@ -7,7 +7,7 @@ module BrooqlyDbEngine
         field :personal_details,  :serialized
         field :user_data, :serialized
         field :user_id,  :string
-        field :notifications, :array, of: :string
+        field :notifications, :serialized
         field :friends, :array, of: :string
         field :location, :serialized
         field :blocked, :array, of: :string
