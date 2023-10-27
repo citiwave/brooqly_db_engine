@@ -9,6 +9,7 @@ module BrooqlyDbEngine
         field :icon, :string
         field :image_url, :string
         field :name, :string
+        field :store_categories :array, of: :string
 
         global_secondary_index hash_key: :category_id
         
