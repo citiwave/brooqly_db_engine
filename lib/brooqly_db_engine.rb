@@ -26,6 +26,7 @@ module BrooqlyDbEngine
   autoload :ChatUser,				  "brooqly_db_engine/models/chat_users"
   autoload :Device,				  "brooqly_db_engine/models/devices"
   autoload :CurrencyRate,				  "brooqly_db_engine/models/currency_rates"
+  autoload :ModeratedImage,				  "brooqly_db_engine/models/moderated_images"
   def self.configure(params = {})
     Dynamoid.configure do |config|
       # Local DDB endpoint:
