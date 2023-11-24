@@ -8,5 +8,7 @@ module BrooqlyDbEngine
         field :image_url, :string
         field :moderation_content, :serialized
         field :status, :string
+        
+        global_secondary_index hash_key: :image_url
     end
 end  
