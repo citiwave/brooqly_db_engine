@@ -25,6 +25,7 @@ module BrooqlyDbEngine
         field :type, :string
         field :is_remote, :string
         field :is_inshop, :string
+        field :transaction_id, :string
         
         global_secondary_index hash_key: :store
         global_secondary_index hash_key: :item
