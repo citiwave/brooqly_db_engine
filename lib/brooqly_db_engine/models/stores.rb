@@ -18,6 +18,7 @@ module BrooqlyDbEngine
 	    field :location_id, :string
         field :has_payment_provider, :string
         field :country_code, :string
+        field :email, :string
 
         global_secondary_index hash_key: :country_code
         global_secondary_index hash_key: :store_id
