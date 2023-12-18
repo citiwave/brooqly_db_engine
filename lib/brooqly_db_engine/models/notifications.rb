@@ -6,6 +6,7 @@ module BrooqlyDbEngine
         
         field :subject, :string 
         field :body, :string 
+        field :sender, :string
         field :notification_type, :string 
         field :users, :array, of: :string
         field :group, :array, of: :string
