@@ -11,6 +11,7 @@ module BrooqlyDbEngine
         field :friends, :array, of: :string
         field :location, :serialized
         field :blocked, :array, of: :string
+        field :is_public, :string
 
         global_secondary_index hash_key: :user_id
         def self.counter(since)
