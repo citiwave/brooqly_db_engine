@@ -15,6 +15,7 @@ module BrooqlyDbEngine
         field :ptimestamp, :string
         field :reports, :serialized
         field :status
+        field :archived, :string
         field :is_public, :string
         global_secondary_index hash_key: :store_id
         global_secondary_index hash_key: :user_id 

@@ -9,6 +9,7 @@ module BrooqlyDbEngine
         field :post_id, :string
         field :status, :string
         field :date, :string
+        field :archived
         global_secondary_index hash_key: :store_id
         global_secondary_index hash_key: :user_id
         global_secondary_index hash_key: :post_id

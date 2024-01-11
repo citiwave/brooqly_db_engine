@@ -8,6 +8,7 @@ module BrooqlyDbEngine
         field :preview, :string
         field :pages, :serialized
         field :date, :string
+        field :archived, :string
         global_secondary_index hash_key: :user_id
     end
 end    
