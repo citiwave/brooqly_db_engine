@@ -20,6 +20,7 @@ module BrooqlyDbEngine
         field :country_code, :string
         field :email, :string
         field :mode, :string
+        field :campaign_id, :string
 
         global_secondary_index hash_key: :country_code
         global_secondary_index hash_key: :store_id
