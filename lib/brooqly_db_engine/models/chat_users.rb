@@ -8,7 +8,7 @@ module BrooqlyDbEngine
         field :chat_user_id, :string
         field :username, :string
         field :password, :string
-
+        field :state, :serialized
         global_secondary_index hash_key: :chat_user_id
         global_secondary_index hash_key: :user_id
     end
