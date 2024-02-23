@@ -7,5 +7,6 @@ module BrooqlyDbEngine
         field :rate_id, :string
         field :rate, :serialized
         field :date, :string
+        global_secondary_index hash_key: :date
     end
 end 
