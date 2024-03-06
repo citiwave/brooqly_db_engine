@@ -13,6 +13,7 @@ module BrooqlyDbEngine
         field :date, :string 
         field :image_url, :string
         field :secondary_image_url, :string
+        field :element_id, :string
 
         # global_secondary_index hash_key: :location_id
         def category
