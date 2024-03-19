@@ -28,7 +28,7 @@ module BrooqlyDbEngine
 
         field :transaction_id, :string
         
-        global_secondary_index hash_key: :store
+        global_secondary_index hash_key: :store , projected_attributes: :all
         global_secondary_index hash_key: :item
         global_secondary_index hash_key: :from
         global_secondary_index hash_key: :to

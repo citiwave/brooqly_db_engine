@@ -18,7 +18,8 @@ module BrooqlyDbEngine
         field :archived, :string
         field :is_public, :string
         global_secondary_index hash_key: :store_id
-        global_secondary_index hash_key: :user_id 
+        global_secondary_index hash_key: :user_id ,projected_attributes: :all 
         global_secondary_index hash_key: :id, range_key: :date, name: "brooqly_posts_index_sorted_id", projected_attributes: :all
+        global_secondary_index hash_key: :status,  projected_attributes: :all
     end
 end     

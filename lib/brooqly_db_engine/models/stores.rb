@@ -23,6 +23,7 @@ module BrooqlyDbEngine
 
         global_secondary_index hash_key: :country_code
         global_secondary_index hash_key: :store_id
+        global_secondary_index hash_key: :status, projected_attributes: :all 
         
         def name=(name)
             self.bpresence = {name: name}

@@ -11,7 +11,7 @@ module BrooqlyDbEngine
         field :status, :string
         field :date, :string
         field :invoice_no, :string
-        global_secondary_index hash_key: :store_id
+        global_secondary_index hash_key: :store_id, projected_attributes: :all
         def self.have_status(status)
             # Return how many treats are purchased (so not consumed and paid)
             Payment.where(:status => status).to_a
