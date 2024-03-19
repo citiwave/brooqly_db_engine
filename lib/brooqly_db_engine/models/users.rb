@@ -13,6 +13,7 @@ module BrooqlyDbEngine
         field :blocked, :array, of: :string
         field :is_public, :string
         field :last_activity, :string
+        field :treatable, :string
 
         global_secondary_index hash_key: :user_id
         def self.counter(since)
