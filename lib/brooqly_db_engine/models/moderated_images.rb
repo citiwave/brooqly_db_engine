@@ -10,5 +10,6 @@ module BrooqlyDbEngine
         field :status, :string
         
         global_secondary_index hash_key: :image_url
+        global_secondary_index hash_key: :status
     end
 end  

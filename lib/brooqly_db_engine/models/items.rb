@@ -12,6 +12,7 @@ module BrooqlyDbEngine
         field :names, :serialized
 
         global_secondary_index hash_key: :item_id
+        global_secondary_index hash_key: :name, projected_attributes: :all
 
         def category
 
