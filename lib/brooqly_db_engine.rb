@@ -22,6 +22,7 @@ module BrooqlyDbEngine
   autoload :CheckIn,				  "brooqly_db_engine/models/checkins"
   autoload :Region,				  "brooqly_db_engine/models/regions"
   autoload :Post,				  "brooqly_db_engine/models/posts"
+  autoload :ProfilePicture,				  "brooqly_db_engine/models/profile_pictures"
   autoload :Story,				  "brooqly_db_engine/models/stories"
   autoload :ChatUser,				  "brooqly_db_engine/models/chat_users"
   autoload :Device,				  "brooqly_db_engine/models/devices"
