@@ -14,6 +14,7 @@ module BrooqlyDbEngine
         field :date, :string
         field :ptimestamp, :string
         field :reports, :serialized
+        field :metadata, :serialized
         field :status
         field :archived, :string
         field :is_public, :string
