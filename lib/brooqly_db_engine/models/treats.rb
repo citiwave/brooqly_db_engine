@@ -5,6 +5,7 @@ module BrooqlyDbEngine
         table name: :treats, key: :id, capacity_mode: :on_demand
         
         field :treat_id,  :string
+        field :treat_intent,  :string
         field :code, :string
         field :currency_code, :string
         field :to, :string

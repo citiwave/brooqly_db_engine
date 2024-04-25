@@ -11,6 +11,7 @@ module BrooqlyDbEngine
   autoload :Store,				  "brooqly_db_engine/models/stores"
   autoload :StoreCategory,  "brooqly_db_engine/models/store_categories"
   autoload :Treat,				  "brooqly_db_engine/models/treats"
+  autoload :TreatIntent,				  "brooqly_db_engine/models/treat_intents"
   autoload :User,				    "brooqly_db_engine/models/users"
   autoload :Item,				    "brooqly_db_engine/models/items"
   autoload :Payment,				"brooqly_db_engine/models/payments"
