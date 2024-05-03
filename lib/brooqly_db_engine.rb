@@ -31,6 +31,7 @@ module BrooqlyDbEngine
   autoload :ModeratedImage,				  "brooqly_db_engine/models/moderated_images"
   autoload :StoreList,               "brooqly_db_engine/models/store_lists"
   autoload :PromotionalTreat,    "brooqly_db_engine/models/promotional_treats"
+  autoload :Offer,    "brooqly_db_engine/models/offers"
   def self.configure(params = {})
     Dynamoid.configure do |config|
       # Local DDB endpoint:
