@@ -17,6 +17,7 @@ module BrooqlyDbEngine
         field :total_price, :string
         field :total_quantity, :integer
         field :remaining_treats, :integer
+        field :current_round, :string
         field :code, :string
     end
 end
