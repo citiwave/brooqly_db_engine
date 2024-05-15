@@ -6,12 +6,14 @@ module BrooqlyDbEngine
     
         field :name, :string
         field :country_code, :string
-        field :message, :string
+        field :success_message, :string
+        field :fail_message, :string
         field :status, :string
         field :start_date, :string
         field :end_date, :string
         field :code, :string
         field :sender_id, :string
+        field :archived, :string
 
         def remaining_quantity
             promotional_treats =  PromotionalTreat.where(:offer_id => self.id).to_a
